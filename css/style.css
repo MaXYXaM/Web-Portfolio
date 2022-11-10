@@ -1,0 +1,357 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+.hero{
+	height: 100vh;
+	width: 100%;
+	background: url('video.mp4');
+    background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+.bgvideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -9999;
+  }
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.logo{
+	color: white;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	display: flex;
+}
+.waviy {
+	position: relative;
+  }
+  .waviy span {
+	position: relative;
+	display: inline-block;
+	font-size: 40px;
+	animation: flip 2s infinite;
+	animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+	0%,80% {
+	  transform: rotateY(360deg) 
+	}
+  }
+span{
+	color:orangered;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: orangered;
+	transition: .4s;
+}
+.btn{
+	background-color:orangered;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+.content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+}
+h1{
+	color: white;
+	margin: 20px 0px 20px;
+	font-size: 75px;
+}
+h3{
+	color: white;
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+h4{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+.newslatter form{
+	width: 380px;
+	max-width: 100%;
+	position: relative;
+}
+.newslatter form input:first-child{
+	display: inline-block;
+	width: 100%;
+	padding: 14px 130px 14px 15px;
+	border: 2px solid orangered;
+	outline: none;
+	border-radius: 30px;
+}
+.newslatter form input:last-child{
+	position: absolute;
+	display: inline-block;
+	outline: none;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color:orangered;
+	color: white;
+	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+	top: 6px;
+	right: 6px; 
+}
+
+	.about{
+		width: 100%;
+		padding: 100px 0px;
+		background-color: #191919;
+	}
+	
+	.about{
+		width: 100%;
+		padding: 100px 0px;
+		background-color: #191919;
+	}
+
+.about img{
+	height: auto;
+	width: 430px;
+}
+.about-text{
+	width: 550px;
+}
+.about-text-box{
+	width: 700px;
+	height: auto;
+	margin: 0 auto;
+}	
+.main{
+	width: 1130px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.img-box{
+	display:flex;
+	align-items:center;
+    margin: 0 auto;
+	justify-content: space-around;
+}
+.round {
+	border-radius: 15%;
+	}
+.scale {
+	transition: 1s; /* Время эффекта */
+	}
+.scale:hover {
+	transform: scale(1.3); /* Увеличиваем масштаб */
+	}
+body::-webkit-scrollbar {
+	width: 4px;               /* ширина scrollbar */
+ }
+body::-webkit-scrollbar-track {
+	background: rgb(0, 0, 0);        /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+	background-color: orangered;    /* цвет плашки */
+	border-radius: 20px;       /* закругления плашки */ /* padding вокруг плашки */
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: white;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+button{
+	background-color:orangered;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid orangered;
+	cursor: pointer;
+}
+
+.projects{
+	background: #101010;
+	width: 100%;
+	padding: 20px 0px;
+}
+.title h2{
+	color: white;
+	font-size: 300%;
+	width: auto;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	max-width:100% ;
+	max-height:100%;
+	justify-content: center;
+	align-items: center;
+}
+.card{
+	padding: 100px 0px;
+	background: #191919;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	margin: 30px auto;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: orangered;
+
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color:white;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+
+.card .button{
+	background-color:orangered;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid orangered;
+	cursor: pointer;
+}
+.contact-me{
+	width: 150%;
+	height: 290px;
+	background: #191919;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.contact-me p{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+.contact-me .button-two:hover{
+	background-color: transparent;
+	border: 2px solid orangered;
+	cursor: pointer;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  orangered;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color:orangered;
+	bottom: 35px;
+	font-size: 14px; 
+}
