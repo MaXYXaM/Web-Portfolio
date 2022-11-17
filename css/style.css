@@ -194,7 +194,7 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
 	background-color: orangered;    /* цвет плашки */
-	border-radius: 20px;       /* закругления плашки */ /* padding вокруг плашки */
+	border-radius: 20px;       /* закругления  плашки */ /* padding вокруг плашки */
 }
 .about-text h5{
 	color: white;
