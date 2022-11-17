@@ -40,21 +40,34 @@ nav{
 .waviy {
 	position: relative;
   }
-  .waviy span {
+.waviy span {
 	position: relative;
 	display: inline-block;
 	font-size: 40px;
-	animation: flip 2s infinite;
-	animation-delay: calc(.2s * var(--i))
+	animation: flip 4s infinite;
+	animation-delay: calc(.3s * var(--i))
   }
-  @keyframes flip {
+@keyframes flip {
 	0%,80% {
 	  transform: rotateY(360deg) 
 	}
-  }
+	}
+
+	.about-text h2{
+		color: white;
+		font-size: 75px;
+		text-transform: capitalize;
+		margin-bottom: 20px;
+	}
+	.main{
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+	}
 span{
 	color:orangered;
-}
+	}
 nav ul li{
 	list-style-type: none;
 	display: inline-block;
@@ -131,16 +144,16 @@ h4{
 	right: 6px; 
 }
 
-	.about{
-		width: 100%;
-		padding: 100px 0px;
-		background-color: #191919;
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
 	}
 	
-	.about{
-		width: 100%;
-		padding: 100px 0px;
-		background-color: #191919;
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
 	}
 
 .about img{
@@ -151,17 +164,10 @@ h4{
 	width: 550px;
 }
 .about-text-box{
-	width: 700px;
+	width: 95%;;
 	height: auto;
 	margin: 0 auto;
 }	
-.main{
-	width: 1130px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-around;
-}
-
 
 .img-box{
 	display:flex;
@@ -174,6 +180,7 @@ h4{
 	}
 .scale {
 	transition: 1s; /* Время эффекта */
+	margin: auto;
 	}
 .scale:hover {
 	transform: scale(1.3); /* Увеличиваем масштаб */
@@ -187,12 +194,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
 	background-color: orangered;    /* цвет плашки */
 	border-radius: 20px;       /* закругления плашки */ /* padding вокруг плашки */
-}
-.about-text h2{
-	color: white;
-	font-size: 75px;
-	text-transform: capitalize;
-	margin-bottom: 20px;
 }
 .about-text h5{
 	color: white;
@@ -355,3 +356,114 @@ footer p:nth-child(2){
 	bottom: 35px;
 	font-size: 14px; 
 }
+
+/*@media*/
+@media (min-width:750px) and (max-width:1400px) {
+	footer{
+		position: relative;
+		width: 100%;
+		height: 300px;
+		background: #101010;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.social a {
+		width: 60px;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: orangered;
+		border-radius: 50%;
+		margin: 22px 10px;
+		color: white;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	.card .button {
+		background-color: orangered;
+		color: white;
+		text-decoration: none;
+		border: 2px solid transparent;
+		font-weight: bold;
+		padding: 9px 22px;
+		border-radius: 30px;
+		transition: .4s;
+	}
+	.about-text p {
+		color: white;
+		letter-spacing: 1px;
+		line-height: 28px;
+		font-size: 18px;
+		margin-bottom: 45px;
+	}
+}
+
+@media (min-width:0px) and (max-width:750px) {
+	
+	footer{
+		position: relative;
+		width: 100%;
+		height: 300px;
+		background: #101010;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.main{
+		width: 100%;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+		justify-content: space-around;
+	}
+	.about-text {
+		width: 100%;
+	}
+	.about img {
+		height: auto;
+		width: 300px;
+	}
+	.social a {
+		width: 80px;
+		height: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: orangered;
+		border-radius: 50%;
+		margin: 22px 10px;
+		color: white;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	.card .button {
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 18px 44px;
+    border-radius: 30px;
+    transition: .4s;
+	
+}
+.about-text p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+.pra p {
+    color: white;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+}
+
