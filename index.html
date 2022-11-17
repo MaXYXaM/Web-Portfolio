@@ -7,9 +7,26 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="adaptive.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 	 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 	 <script>
+		var months = new Array(13);
+		months[1]="января"; months[2]="февраля"; months[3]="марта"; months[4]="апреля"; months[5]="мая"; months[6]="июня"; months[7]="июля"; months[8]="августа"; months[9]="сентября"; months[10]="октября"; months[11]="ноября"; months[12]="декабря";
+	  
+		var time = new Date();
+		var thismonth = months[time.getMonth() + 1];
+		var date = time.getDate();
+	  </script>
+				  
+		<script>           
+			setInterval(function() {
+  			var cd = new Date();
+  			var clockdat = document.getElementById("clockdat");
+  			clockdat.innerHTML = cd.toLocaleTimeString();
+			}, 1000);
+		</script>
 
 </head>
 <body>
@@ -19,23 +36,15 @@
 	<div class="hero">
 		<nav>
 			<h2 class="waviy">
-				<span style="--i:1">P</span>
-				<span style="--i:2">o</span>
-				<span style="--i:3">r</span>
-				<span style="--i:4">t</span>
+				<span style="--i:1;color:white">P</span>
+				<span style="--i:2;color:white">o</span>
+				<span style="--i:3;color:white">r</span>
+				<span style="--i:4;color:white">t</span>
 				<span style="--i:5">f</span>
 				<span style="--i:6">o</span>
 				<span style="--i:7">l</span>
 				<span style="--i:8">i</span>
 				<span style="--i:9">o</span></h2>
-			<ul>
-				<!--
-				<li><button type="button" href="#">Обо мне</a></li>
-				<li><button type="button" href="#">Проекты</a></li>
-				<li><button type="button" href="#">Умения</a></li>
-				<li><button type="button" href="#">Контакты</a></li>
-				-->
-			</ul>
 		</nav>
 
 		<div class="content">
@@ -101,6 +110,41 @@
 						<div>
 							<img src="img/PuzzleProject.png"width="95%" height="50%">
 						</div>
+				</div>
+			</div>
+		</div>
+		<div class="title">
+			<h2>Умения</h2>
+		</div>
+	</div>
+	<!-----My Skills----------->
+	<div class="skills">
+		<div class="skill-box">
+			<div class="skill-card">
+				<h5><span>Pascal ABC</span></h5>
+				<div class="pra">
+					<p>На 2-м курсе были получены знания в области программирования на языке Pascal ABC. Был написан проект на Delphi 7. В дальнейшем не планировал развиваться в этой области</p>
+				</div>
+			</div>
+
+			<div class="skill-card">
+				<h5><span>C#</span></h5>
+				<div class="pra">
+					<p>На 3-м курсе были получены базовые знания в области программирования на языке С# На данный момент не имеется желания развиваться в этой области</p>
+				</div>
+			</div>
+			<div class="skill-card">
+				<h5><span>1C</span></h5>
+				<div class="pra">
+					<p>Начиная с 3 курса колледжа занимался разработкой баз на платформе 1С предприятия 8.3 И даже успел на этом заработать :) Очень хотелось продолжить совершенствование своих навыков в данной области, но пока не предоставляется такой возможности </p>
+				</div>
+			</div>
+
+			<div class="skill-card">
+				<h5><span>CSS & HTML</span></h5>
+				<div class="pra">
+					<p>На 4-м курсе познакомился с областью Web-Разработки, очень заинтересовался. Планирую развиваться и дальше в этом направлении</p>
+
 				</div>
 			</div>
 		</div>

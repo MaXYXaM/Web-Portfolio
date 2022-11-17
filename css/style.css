@@ -244,6 +244,12 @@ button:hover{
 	justify-content: center;
 	align-items: center;
 }
+.skill-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
 .card{
 	padding: 100px 0px;
 	background: #191919;
@@ -251,6 +257,22 @@ button:hover{
 	overflow: hidden;
 	text-align: center;
 	margin: 30px auto;
+}
+.skill-card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 5px;
+	background: #272626;
+	border-radius: 20px;
+	margin: 2px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.skills{
+	background: #191919;
+	width: 100%;
+	padding: 100px 0px;
 }
 .card i{
 	font-size: 50px;
@@ -358,8 +380,8 @@ footer p:nth-child(2){
 	font-size: 14px; 
 }
 
-/*@media*/
-@media (min-width:1000px) and (max-width:1600px) {
+
+@media (min-width:900px) and (max-width:1400px) {
 	footer{
 		position: relative;
 		width: 100%;
@@ -404,8 +426,7 @@ footer p:nth-child(2){
 		width: 95vh;
 	}
 }
-
-@media (min-width:400px) and (max-width:1000px) {
+@media (min-width:400px) and (max-width:900px) {
 	
 	footer{
 		position: relative;
@@ -464,9 +485,26 @@ footer p:nth-child(2){
 }
 .pra p {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
+}
+.skill-card{
+	height: 100%;
+	width: 100%;
+	background: #272626;
+	border-radius: 20px;
+	margin: 2px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.skill-box {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+	text-align:center;
 }
 
 }
@@ -533,4 +571,22 @@ footer p:nth-child(2){
     line-height: 27px;
     margin-bottom: 25px;
 }
+.skill-card{
+	height: 100%;
+	width: 100%;
+	background: #272626;
+	border-radius: 20px;
+	margin: 2px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.skill-box {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+	text-align:center;
+}
 
+}
