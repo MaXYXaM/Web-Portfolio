@@ -162,6 +162,7 @@ h4{
 }
 .about-text{
 	width: 550px;
+	margin: auto;
 }
 .about-text-box{
 	width: 95%;;
@@ -358,7 +359,7 @@ footer p:nth-child(2){
 }
 
 /*@media*/
-@media (min-width:750px) and (max-width:1400px) {
+@media (min-width:1000px) and (max-width:1600px) {
 	footer{
 		position: relative;
 		width: 100%;
@@ -399,9 +400,12 @@ footer p:nth-child(2){
 		font-size: 18px;
 		margin-bottom: 45px;
 	}
+	.about-text {
+		width: 95vh;
+	}
 }
 
-@media (min-width:0px) and (max-width:750px) {
+@media (min-width:400px) and (max-width:1000px) {
 	
 	footer{
 		position: relative;
@@ -465,5 +469,68 @@ footer p:nth-child(2){
     margin-bottom: 25px;
 }
 
+}
+@media (min-width:0px) and (max-width:400px) {
+	
+	footer{
+		position: relative;
+		width: 100%;
+		height: 300px;
+		background: #101010;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.main{
+		width: 85%;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+		justify-content: space-around;
+	}
+	.about-text {
+		width: 100%;
+	}
+	.about img {
+		height: auto;
+		width: 300px;
+	}
+	.social a {
+		width: 65px;
+		height: 65px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: orangered;
+		border-radius: 50%;
+		margin: 22px 10px;
+		color: white;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	.card .button {
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 18px 44px;
+    border-radius: 30px;
+    transition: .4s;
+	
+}
+.about-text p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+.pra p {
+    color: white;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 25px;
 }
 
